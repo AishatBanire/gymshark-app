@@ -9,5 +9,13 @@ import { NewReleaseCards } from "./NewReleaseCards.model";
 export class NewReleaseCardsComponent{
    @Input()
    title!: string;
+   @Input()
+   secondaryTitle!: string;
+   @Input()
+   color!: string;
+   @Input()
+   price!: string;
+   @Input()
+   imagePath!: string;
 }
 
