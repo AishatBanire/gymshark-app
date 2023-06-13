@@ -6,10 +6,15 @@ import { TopNavComponent } from './Header/topnav.component';
 import { NavBarComponent } from './Header/navbar.component';
 import { CarouselComponent } from './Header/carousel.component';
 import { PhotoOverlayComponent } from './Header/photo-overlay/photo-overlay.component';
-import { NewReleaseCardsComponent } from './Cards/new-release-cards.component';
-import { VideoComponent } from './video/video.component';
-import { CardComponent } from './Cards/card.component';
-import { NewReleaseCards } from './Cards/NewReleaseCards.model';
+import { NewReleaseCardsComponent } from './Body/Cards/new-release-cards.component';
+import { VideoComponent } from './Body/Cards/video/video.component';
+import { CardComponent } from './Body/Cards/card.component';
+import { NewReleaseCards } from './Body/Cards/NewReleaseCards.model';
+import { AppRoutingModule } from './app-routing.module';
+import {FooterComponent} from './Footer/footer.component';
+import { AccountComponent } from './Nav/account/account.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './Nav/user-info.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +25,15 @@ import { NewReleaseCards } from './Cards/NewReleaseCards.model';
     NewReleaseCardsComponent,
     VideoComponent,
     CardComponent,
-   
+    FooterComponent,
+    AccountComponent,
+    UserInfoComponent
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
