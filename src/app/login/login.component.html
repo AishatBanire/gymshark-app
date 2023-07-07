@@ -1,0 +1,32 @@
+<div class = "container">
+<form #postform = "ngForm" (ngSubmit) = "logIn(postForm.value)">
+
+  <div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Email</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" ngModel name ="email">
+</div>
+
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Another label</label>
+  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder" ngModel name ="email">
+</div>
+
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Email</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" ngModel name ="email">
+</div>
+
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Email</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" ngModel name ="email">
+</div>
+
+<div class="mb-3 form-check">
+  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>
+<div class="col-12">
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</div>
+</form>
+</div>

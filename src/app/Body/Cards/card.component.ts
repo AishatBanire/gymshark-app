@@ -1,17 +1,17 @@
 import { mock_cards } from "./mock-cards";
 import { Component } from "@angular/core";
-import { NewReleaseCards } from "./NewReleaseCards.model";
+import { NewReleaseCardsModel } from "./NewReleaseCards.model";
 
 @Component({
   selector: "gymshark-card",
   templateUrl:"card.component.html"
 })
 export class CardComponent{
-  newreleasecards:NewReleaseCards[]=[];
+  products:NewReleaseCardsModel[]=[];
 
   constructor(){
-for (var newReleaseCards of mock_cards){
-  this.newreleasecards.push( new NewReleaseCards(newReleaseCards));
+for (var products of mock_cards){
+  this.products.push( new NewReleaseCardsModel(products));
 }
 
   }

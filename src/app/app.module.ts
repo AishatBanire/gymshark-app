@@ -9,12 +9,15 @@ import { PhotoOverlayComponent } from './Header/photo-overlay/photo-overlay.comp
 import { NewReleaseCardsComponent } from './Body/Cards/new-release-cards.component';
 import { VideoComponent } from './Body/Cards/video/video.component';
 import { CardComponent } from './Body/Cards/card.component';
-import { NewReleaseCards } from './Body/Cards/NewReleaseCards.model';
+import { NewReleaseCardsModel } from './Body/Cards/NewReleaseCards.model';
 import { AppRoutingModule } from './app-routing.module';
 import {FooterComponent} from './Footer/footer.component';
 import { AccountComponent } from './Nav/account/account.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './Nav/user-info.component';
+import { FormsModule } from '@angular/forms';
+import { LogInComponent } from './login/login.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,13 +30,15 @@ import { UserInfoComponent } from './Nav/user-info.component';
     CardComponent,
     FooterComponent,
     AccountComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    LogInComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

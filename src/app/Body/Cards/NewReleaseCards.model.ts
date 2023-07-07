@@ -1,6 +1,7 @@
-import { Title } from "@angular/platform-browser";
+import { NewReleaseCardsComponent } from './new-release-cards.component';
+import { CardComponent } from './card.component';
 
-export class NewReleaseCards {
+export class NewReleaseCardsModel {
 
   title: string;
   secondaryTitle:string;
